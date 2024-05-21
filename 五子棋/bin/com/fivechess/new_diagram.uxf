@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>3</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>366</x>
+      <y>138</y>
+      <w>138</w>
+      <h>129</h>
+    </coordinates>
+    <panel_attributes>com.fivechess::Main
+--
+-servialVersionUID = 1L: long
+~logoLabel = new JLabel("浜斿瓙妫?"): JLabel
+~logo = new JLabel(): JLabel
+~loginButton = new JButton("                  鐧?   闄?                  "): JButton
+~registerLabel = new JLabel("绔嬪嵆娉ㄥ唽"): JLabel
+~userLabel = new JLabel("璐﹀彿锛?"): JLabel
+~passwordLabel = new JLabel("瀵嗙爜锛?"): JLabel
+~userjt = new JTextField(11): JTextField
+~passwordjt = new JPasswordField(11): JPasswordField
+~rememberPasswordjcb = new JCheckBox(): JCheckBox
+~rememberPasswordjl = new JLabel("璁颁綇瀵嗙爜"): JLabel
+~automaticLoginjcb = new JCheckBox(): JCheckBox
+~automaticLoginjl = new JLabel("鑷姩鐧诲綍"): JLabel
+~promptPasswordFalse = new JLabel("瀵嗙爜閿欒!"): JLabel
+~promptRegister = new JLabel("璇ヨ处鍙疯繕鏈敞鍐岋紒"): JLabel
+~promptUserNameEmpty = new JLabel("璇疯緭鍏ヨ处鍙凤紒"): JLabel
+~prompPasswordEmpty = new JLabel("璇疯緭鍏ュ瘑鐮侊紒"): JLabel
+~color = Color.BLACK: Color
+~read = new FileOperation(): FileOperation
+~f = new FileOperation(): FileOperation
+--
++Main(): ctor
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>834</x>
+      <y>201</y>
+      <w>57</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>267</y>
+      <w>42</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>120.0;260.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>534</x>
+      <y>423</y>
+      <w>78</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>240.0;190.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>231</x>
+      <y>195</y>
+      <w>135</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;180.0;430.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>57</y>
+      <w>45</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>237</x>
+      <y>363</y>
+      <w>141</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;450.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>231</x>
+      <y>27</y>
+      <w>111</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>350.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>42</x>
+      <y>45</y>
+      <w>186</w>
+      <h>426</h>
+    </coordinates>
+    <panel_attributes>com.fivechess::Chessboard
+--
+-serialVersionUID = 1L: long
+~userNameLabel = new JLabel("璐﹀彿:"): JLabel
+~userName = new JLabel(): JLabel
+~pointsLabel = new JLabel("绉垎:"): JLabel
+~classLabel = new JLabel("绛夌骇:"): JLabel
+~headImage = new JLabel(): JLabel
+~winproLabel = new JLabel("鑳滅巼:"): JLabel
+~newRound = new JButton("鏂板眬"): JButton
+~back = new JButton("鎮旀"): JButton
+~returnback = new JButton("杩斿洖"): JButton
+~exit = new JButton("閫?鍑?"): JButton
+~colorLightYellow = Color.WHITE: Color
+~colorHeavry = Color.WHITE: Color
+~drawPanel = new DrawPanel(): DrawPanel
+~board = new JPanel(): JPanel
+~logotext = new JLabel("浜斿瓙妫?"): JLabel
+~logoImage = new JLabel(): JLabel
+~difficulityLabel = new JLabel("闅惧害:"): JLabel
+-difficulityClass = new JComboBox(): JComboBox&lt;String&gt;
+~selectChessLabel = new JLabel("妫嬭壊閫夋嫨:"): JLabel
+~whiteChessjr = new JRadioButton(): JRadioButton
+~whiteChessLabel = new JLabel(): JLabel
+~blackChessjr = new JRadioButton(): JRadioButton
+~blackChessLabel = new JLabel(): JLabel
+~buttongroup = new ButtonGroup(): ButtonGroup
+~r = new Random(): Random
+~f = new FileOperation(): FileOperation
+~thread: Thread
+~springLayout = new SpringLayout(): SpringLayout
+~image = getToolkit().getImage(Chessboard.class.getResource("/image/background.jpg")): Image
+~happy = getToolkit().getImage(Chessboard.class.getResource("/image/happy1.png")): Image
+~win = getToolkit().getImage(Chessboard.class.getResource("/image/win.png")): Image
+~lose = getToolkit().getImage(Chessboard.class.getResource("/image/lose.png")): Image
+~white = getToolkit().getImage(Chessboard.class.getResource("/image/whiteChess.png")): Image
+~black = getToolkit().getImage(Chessboard.class.getResource("/image/blackChess.png")): Image
+~star = getToolkit().getImage(Chessboard.class.getResource("/image/star.png")): Image
+~moon = getToolkit().getImage(Chessboard.class.getResource("/image/moon.png")): Image
+~sun = getToolkit().getImage(Chessboard.class.getResource("/image/sun.png")): Image
+~flag = 0: int
+~winFLAG = 0: int
+~playerColor = -1: int
+~computerColor = -1: int
+~CHESSCOLOR = 1: int
+~player = 1: int
+~computer = 0: int
+~chessboardEmpty = 0: int
+~dogfall = 0: int
+~newchessX = 0: int
+~newchessY = 0: int
+~x, y: int
+~pointsNum = 0: long
+~gamewinNum = 0.0: double
+~gameNum = 0.0: double
+~winNum = 0: int
+~starNum = 0: int
+~moonNum = 0: int
+~sunNum = 0: int
+~classNum = 0: int
+~comeX = 0: int
+~comeY = 0: int
+~toX = 0: int
+~toY = 0: int
+~winX = 0: int
+~winY = 0: int
+~winWay = 0: int
+~t = 0, s = 0: int
+~count = 0: int
+~depth = 0: int
+~judgeFlag = 0: int
+~map[][] = new int[15][15]: int
+~mapflag[][] = new int[15][15]: int
+~promptBoxFlag[][] = new int[15][15]: int
+~imapflag[] = new int[225]: int
+~jmapflag[] = new int[225]: int
+~position[] = new int[] { 0, 0 }: int
+--
++Chessboard(): ctor
++GetClickPosition(): void
+-tuntoComputer(): //鐢佃剳涓嬫&#13;
+void
++judge(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>372</x>
+      <y>354</y>
+      <w>162</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>com.fivechess::Register
+--
+~welcomeRegisterLabel = new JLabel("娆㈣繋娉ㄥ唽浜斿瓙妫嬶紒"): JLabel
+~userLabel = new JLabel("鐢ㄦ埛鍚嶏細"): JLabel
+~userjt = new JTextField(14): JTextField
+~passwordLabel = new JLabel("瀵嗙爜锛?"): JLabel
+~passwordjp = new JPasswordField(14): JPasswordField
+~confirmPasswordLabel = new JLabel("纭瀵嗙爜锛?"): JLabel
+~confirmPasswordjp = new JPasswordField(14): JPasswordField
+~back = new JLabel("杩斿洖"): JLabel
+~tipUserAlreadyRegistered = new JLabel("璇ヨ处鍙峰凡缁忔敞鍐岋紒"): JLabel
+~tipUserNameEmpty = new JLabel("鐢ㄦ埛鍚嶄负绌猴紒"): JLabel
+~tipUserNameLessThan5Char = new JLabel("璐﹀彿灏戜簬5涓瓧绗︼紒"): JLabel
+~tipPasswordEmpty = new JLabel("瀵嗙爜涓嶈兘涓虹┖!"): JLabel
+~tipPasswordLessThan6Char = new JLabel("瀵嗙爜灏戜簬6涓瓧绗︼紒"): JLabel
+~tipPasswordInconfirmity = new JLabel("涓ゆ瀵嗙爜涓嶄竴鑷?!"): JLabel
+~tipConfirmPasswordqualified = new JLabel("閲嶅瀵嗙爜姝ｇ‘锛?"): JLabel
+~tipyanzhengmaerror = new JLabel("楠岃瘉鐮佽緭鍏ヤ笉姝ｇ‘!"): JLabel
+~r = new Random(): Random
+~userName = new String(): String
+~password = new String(): String
+~read = new FileOperation(): FileOperation
+~repeatPassword = new String(): String
+~yanzhengma = new String(): String
+~yzm = new String(): String
+~flagUserName = 0: int
+~flagPassword = 0: int
+~flagConfirmedPassword = 0: int
+~flagyanzhengma = 0: int
+~YZM = new char[62]: char[]
+~springLayout = new SpringLayout(): SpringLayout
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>0</y>
+      <w>123</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>com.fivechess::Algorithm
+--
+--
++countScore(int map[][], int X, int Y, int computerColor): int
++evalute(int map[][], int depth, int computerColor): int[]
++minimax(int map[][], int chessColor): int
++alphaBetaCutting(int map[][], int chessColor): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>606</x>
+      <y>483</y>
+      <w>144</w>
+      <h>51</h>
+    </coordinates>
+    <panel_attributes>com.fivechess::FileOperation
+--
+--
++creatExcel(String path): void
++readData(String path, String userName): boolean
++writeData(String path, String userName, String keyword, String data): void
++backData(String path, String userName, String keyword): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
